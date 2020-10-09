@@ -17,7 +17,7 @@ $.ajaxPrefilter(function (option) {
     }
 
     option.complete = function (res) { 
-        console.log(res);
+        // console.log(res);
         // 判断 如果是身份认证失败，跳转到登录页面
         if (res.responseJSON.status == 1 && res.responseJSON.message == '身份认证失败！') { 
             // 清空本地 token
